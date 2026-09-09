@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ivory: #f6f1ea;
+  --color-paper: #fbf8f4;
+  --color-cream: #efe6da;
+  --color-ink: #2a221e;
+  --color-ink-soft: #5c514a;
+  --color-muted: #8a7e76;
+  --color-rose: #b76e7d;
+  --color-rose-deep: #9a5463;
+  --color-blush: #ead4d7;
+  --color-gold: #c4a574;
+  --color-gold-deep: #a88955;
+  --color-champagne: #e8dcc8;
+  --color-surface: #fffcf8;
+  --color-border: #e4d9ce;
+  --color-footer: #1a1512;
+  --color-footer-fg: #f6f1ea;
+  --color-footer-muted: #cbbba8;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --shadow-card:
+    0px 0px 0px 1px rgba(42, 34, 30, 0.06),
+    0px 1px 2px -1px rgba(42, 34, 30, 0.06),
+    0px 10px 28px -12px rgba(42, 34, 30, 0.12);
+  --shadow-card-hover:
+    0px 0px 0px 1px rgba(42, 34, 30, 0.08),
+    0px 1px 2px -1px rgba(42, 34, 30, 0.08),
+    0px 16px 36px -14px rgba(42, 34, 30, 0.16);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.55;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  img.photo {
+    outline: 1px solid rgba(42, 34, 30, 0.08);
+    outline-offset: -1px;
+  }
+
+  ::selection {
+    background: var(--color-blush);
+    color: var(--color-ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+}
