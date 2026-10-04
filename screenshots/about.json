@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/about",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "About Amanda French | Graceful Order",
+      "hasCanvas": false,
+      "bodyTextLen": 2494,
+      "bodyTextHash": "8feee1ab641040423e0a2c9ffbd7ca9f9da983ebd68d80ecd809fd33b88414b4",
+      "bodyTextPrefix": "Skip to content Graceful ORDER Services Packages Pricing Areas A",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/about.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "About Amanda French | Graceful Order",
+      "hasCanvas": false,
+      "bodyTextLen": 2436,
+      "bodyTextHash": "89a73a884a5344a456dd07dd3c1657acf20132c823c3497ee181e56f7d2f688b",
+      "bodyTextPrefix": "Skip to content Graceful ORDER ABOUT Amanda French. Kindness + p",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/about-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/about.json"
+}

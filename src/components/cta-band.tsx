@@ -5,7 +5,7 @@ import { Container } from "@/components/section";
 
 export function CtaBand({
   title = "Ready for a quieter house?",
-  lede = "Tell us the rooms, the rhythm, and the city. You will see a transparent estimate before anyone knocks.",
+  lede = "Tell me the rooms, the rhythm, and the city. You’ll see a clear estimate before I knock — and I bring my own supplies.",
 }: {
   title?: string;
   lede?: string;

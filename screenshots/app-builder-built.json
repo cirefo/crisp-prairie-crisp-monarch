@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Graceful Order | Home organizer & cleaning in Plano, TX",
+      "hasCanvas": false,
+      "bodyTextLen": 5011,
+      "bodyTextHash": "75e168757d38a58ad269a3c7316cadfef7896fb54b1273a18e96fbd0c1725593",
+      "bodyTextPrefix": "Skip to content Graceful ORDER Services Packages Pricing Areas A",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Graceful Order | Home organizer & cleaning in Plano, TX",
+      "hasCanvas": false,
+      "bodyTextLen": 4953,
+      "bodyTextHash": "a7dc7dfcbe443036ab314d0282943510c7a7dcbaf13cfa5fa8eef1578c737a69",
+      "bodyTextPrefix": "Skip to content Graceful ORDER PLANO · NORTH DALLAS · COLLIN COU",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

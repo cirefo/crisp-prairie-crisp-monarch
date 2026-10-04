@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/packages",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Signature packages | Graceful Order",
+      "hasCanvas": false,
+      "bodyTextLen": 2303,
+      "bodyTextHash": "723ee62c9bd34c0a73928d5f51ba93dd72793749bb8cfb5f2db0a44a3d6b359a",
+      "bodyTextPrefix": "Skip to content Graceful ORDER Services Packages Pricing Areas A",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/packages.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Signature packages | Graceful Order",
+      "hasCanvas": false,
+      "bodyTextLen": 2245,
+      "bodyTextHash": "1db89534d244cf47535bfa9b3e0c08dab6270d2d5f64cd89b18ff6e2d82e84b6",
+      "bodyTextPrefix": "Skip to content Graceful ORDER PACKAGES Repeatable on purpose. Y",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/packages-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/packages.json"
+}

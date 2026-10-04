@@ -10,24 +10,15 @@ export function SiteFooter() {
       <Container className="py-16 sm:py-20">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <div className="flex items-center gap-3">
-              <img
-                src="/brand/emblem-dark.png"
-                alt=""
-                className="h-16 w-auto object-contain"
-              />
-              <span className="flex flex-col leading-none">
-                <span className="font-display text-3xl font-medium text-footer-fg">
-                  Graceful
-                </span>
-                <span className="mt-1.5 text-[0.7rem] font-medium uppercase tracking-[0.4em] text-gold">
-                  Order
-                </span>
-              </span>
-            </div>
+            <img
+              src="/brand/logo-lockup.png"
+              alt="Graceful Order"
+              className="h-16 w-auto max-w-[320px] object-contain object-left"
+            />
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-footer-muted">
-              {SITE.tagline} Cleaning, sanitizing, decluttering, and organizing
-              for homes across {SITE.region} — by {SITE.owner}.
+              A smaller local cleaning and organizing service — house cleaning,
+              home décor support, and the closets and garages nobody else wants
+              to finish. {SITE.region}, by {SITE.owner}.
             </p>
             <p className="mt-4 font-display text-xl italic text-gold">
               Because you have better things to do.

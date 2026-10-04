@@ -97,27 +97,37 @@ export const ROOM_LIMITS = {
   livingRooms: { min: 1, max: 4 },
 };
 
-function extraBedrooms(kind: ServiceKind, bedrooms: number) {
+function usesLargeDeepBase(kind: ServiceKind, bedrooms: number, fullBaths: number, halfBaths: number) {
   const deep = kind !== "maintenance";
-  if (deep && bedrooms >= 4) return Math.max(0, bedrooms - 4);
+  const baths = fullBaths + halfBaths * 0.5;
+  return deep && bedrooms >= 4 && baths >= 2.5;
+}
+
+function extraBedrooms(kind: ServiceKind, bedrooms: number, fullBaths: number, halfBaths: number) {
+  if (usesLargeDeepBase(kind, bedrooms, fullBaths, halfBaths)) return Math.max(0, bedrooms - 4);
   return Math.max(0, bedrooms - 3);
 }
 
-function extraFullBaths(kind: ServiceKind, fullBaths: number) {
+function extraFullBaths(_kind: ServiceKind, fullBaths: number) {
   return Math.max(0, fullBaths - 2);
 }
 
-function extraHalfBaths(kind: ServiceKind, halfBaths: number, bedrooms: number) {
-  const deep = kind !== "maintenance";
-  if (deep && bedrooms >= 4) return Math.max(0, halfBaths - 1);
+function extraHalfBaths(kind: ServiceKind, halfBaths: number, bedrooms: number, fullBaths: number) {
+  if (usesLargeDeepBase(kind, bedrooms, fullBaths, halfBaths)) return Math.max(0, halfBaths - 1);
   return Math.max(0, halfBaths);
 }
 
 export function estimateQuote(input: QuoteInput): Estimate {
   const lines: PriceLine[] = [];
   const deep = input.kind !== "maintenance";
+  const large = usesLargeDeepBase(
+    input.kind,
+    input.bedrooms,
+    input.fullBaths,
+    input.halfBaths,
+  );
 
-  if (deep && input.bedrooms >= 4) {
+  if (large) {
     lines.push({
       label: "Deep clean base — 4+ bedroom / 2.5 bath",
       amount: 500,
@@ -134,7 +144,12 @@ export function estimateQuote(input: QuoteInput): Estimate {
     });
   }
 
-  const beds = extraBedrooms(input.kind, input.bedrooms);
+  const beds = extraBedrooms(
+    input.kind,
+    input.bedrooms,
+    input.fullBaths,
+    input.halfBaths,
+  );
   if (beds > 0) {
     lines.push({
       label: `Additional bedroom${beds === 1 ? "" : "s"} × ${beds}`,
@@ -150,7 +165,12 @@ export function estimateQuote(input: QuoteInput): Estimate {
     });
   }
 
-  const halfs = extraHalfBaths(input.kind, input.halfBaths, input.bedrooms);
+  const halfs = extraHalfBaths(
+    input.kind,
+    input.halfBaths,
+    input.bedrooms,
+    input.fullBaths,
+  );
   if (halfs > 0) {
     lines.push({
       label: `Half bathroom${halfs === 1 ? "" : "s"} × ${halfs}`,
@@ -167,7 +187,7 @@ export function estimateQuote(input: QuoteInput): Estimate {
   }
 
   if (input.kind === "reset") {
-    const org = deep && input.bedrooms >= 4 ? 225 : 185;
+    const org = large ? 225 : 185;
     lines.push({
       label: "Declutter + organization (Graceful Reset)",
       amount: org,
@@ -175,7 +195,7 @@ export function estimateQuote(input: QuoteInput): Estimate {
   }
 
   if (input.kind === "move") {
-    const org = deep && input.bedrooms >= 4 ? 175 : 150;
+    const org = large ? 175 : 150;
     lines.push({
       label: "Move-in / move-out organization",
       amount: org,

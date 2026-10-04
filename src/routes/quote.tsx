@@ -34,7 +34,7 @@ function QuotePage() {
       <PageHero
         eyebrow="Pricing"
         title="A clear number. Then a conversation."
-        lede="The calculator uses the published menu — 3 bedroom / 2 bath as the starting home, extras itemized, organizing add-ons optional. Send it, and Amanda confirms timing within one business day."
+        lede="The calculator uses the published menu — 3 bedroom / 2 bath as the starting home, extras itemized, organizing optional. Send it, and I confirm timing within one business day. I bring my supplies."
       />
       <Section>
         <Container>

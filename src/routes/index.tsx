@@ -1,25 +1,25 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { CITIES } from "@/lib/cities";
-import { METHOD, PACKAGES, PILLARS, SITE } from "@/lib/content";
+import { METHOD, PACKAGES, PILLARS, SITE, WORK } from "@/lib/content";
 import { Button } from "@/components/ui/button";
 import { CtaBand } from "@/components/cta-band";
 import { FaqList } from "@/components/faq-list";
 import { DiamondMark, Rule } from "@/components/marks";
 import { Container, Eyebrow, Section, SectionHeading } from "@/components/section";
-import { formatUsd } from "@/lib/utils";
+import { formatUsd, cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({
     meta: [
       {
-        title: "Graceful Order | Home organizer & cleaning in Plano, TX",
+        title: "Graceful Order | House cleaning & organizing in Plano, TX",
       },
       {
         name: "description",
         content:
-          "Where calm meets careful order. Amanda French cleans, sanitizes, declutters, and organizes homes in Plano, Frisco, McKinney, Dallas, and nearby cities — with a repeatable rhythm.",
+          "Because you have better things to do. Amanda French — a trusted local for house cleaning, organizing, and construction or move-in cleans across Plano, Frisco, McKinney, Dallas, and nearby cities.",
       },
     ],
   }),
@@ -31,12 +31,12 @@ const jsonLd = {
   name: "Graceful Order",
   founder: { "@type": "Person", name: "Amanda French" },
   description:
-    "Organizing-first cleaning, sanitizing, and decluttering for North Dallas and Collin County homes.",
+    "Smaller local house cleaning, home décor support, and household organizing for North Dallas and Collin County. Trusted individual, not a rotating crew.",
   areaServed: CITIES.map((city) => ({
     "@type": "City",
     name: `${city.name}, TX`,
   })),
-  slogan: "Where calm meets careful order.",
+  slogan: "Because you have better things to do.",
 };
 
 function Home() {
@@ -50,17 +50,17 @@ function Home() {
       <section className="relative overflow-hidden bg-ivory">
         <Container className="grid items-center gap-10 py-14 lg:grid-cols-12 lg:gap-12 lg:py-20">
           <div className="lg:col-span-6">
-            <Eyebrow>Plano · North Dallas · Collin County</Eyebrow>
+            <Eyebrow>A trusted local · Plano to Grapevine</Eyebrow>
             <h1 className="mt-4 font-display text-4xl font-medium tracking-tight text-ink sm:text-5xl lg:text-6xl">
-              Where calm meets careful order.
+              Because you have better things to do.
             </h1>
             <Rule className="mt-6 max-w-40" />
             <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-soft sm:text-lg">
-              You do not need a stricter version of yourself. You need a home
-              that is easier to live in — cleaned with care, organized with
-              intention, and kept on a rhythm that lasts. {SITE.owner} built
-              Graceful Order for overwhelmed houses that deserve both kindness
-              and precision.
+              I’m {SITE.owner}. Not a franchise, not a rotating crew — a
+              smaller local service for people who want one trusted person in
+              the house. Cleaning, organizing, décor help, and the messy jobs
+              before holidays, move-ins, or construction wrap. I bring my own
+              supplies. Apartments to two-story homes. Flexible hours.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg">
@@ -70,18 +70,18 @@ function Home() {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/packages">See signature packages</Link>
+                <Link to="/packages">See how I work</Link>
               </Button>
             </div>
             <p className="mt-6 text-sm italic text-muted">
-              Thoughtfully arranged. Beautifully maintained.
+              Detail-oriented, reasonably priced, and meant to last.
             </p>
           </div>
           <div className="lg:col-span-6">
             <div className="overflow-hidden rounded-xl shadow-card">
               <img
-                src="/images/hero-living.jpg"
-                alt="A sunlit living room after professional organizing — ivory sofa, ordered shelves, and a calm, lived-in home."
+                src="/images/work-granite-bar.jpg"
+                alt="Granite kitchen bar after a Graceful Order clean — clear, shining, ready."
                 className="photo aspect-4/3 w-full object-cover lg:aspect-square"
               />
             </div>
@@ -107,9 +107,9 @@ function Home() {
       <Section>
         <Container>
           <SectionHeading
-            eyebrow="What she does"
-            title="Cleaning is the floor. Organizing is the house standing up straight."
-            lede="Graceful Order is not a maid service with a prettier logo. Amanda cleans, sanitizes, and declutters — and then she organizes, so the calm has a place to live. Repeatable on purpose."
+            eyebrow="What I do"
+            title="House cleaning, organizing, and the jobs in between."
+            lede="Community members keep looking for a trusted individual instead of a big company. That’s the whole business: personalized service, hidden-gem care, and enough lifting to actually finish the garage."
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {PILLARS.map((pillar) => (
@@ -149,7 +149,7 @@ function Home() {
           <SectionHeading
             eyebrow="Signature packages"
             title="A first reset. Then a rhythm."
-            lede="Individual services are always available. These three packages are how most homes begin — and how they stay."
+            lede="You can book a single closet or a single deep clean. Most homes do better with a named package — a true start, then a visit that comes back."
           />
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {PACKAGES.map((pkg) => (
@@ -196,9 +196,9 @@ function Home() {
         <Container className="grid items-center gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <SectionHeading
-              eyebrow="The French method"
-              title="Mise en place, at home."
-              lede="Amanda French — yes, that French — runs the day the way a careful kitchen runs a service: everything has a place, and the place is kind."
+              eyebrow="How a visit actually goes"
+              title="Same person. Clear plan. No performance."
+              lede="The last name is French. The work is North Texas practical — kind, precise, and done on a schedule that respects yours."
             />
           </div>
           <ol className="grid gap-6 sm:grid-cols-2 lg:col-span-7">
@@ -220,41 +220,29 @@ function Home() {
       <Section className="bg-ivory">
         <Container>
           <SectionHeading
-            eyebrow="The rooms"
-            title="A fresh start with structure."
-            lede="Closets that close. Pantries that tell the truth. Garages that are not a second attic. This is the outcome — not just the absence of clutter."
+            eyebrow="Recent work"
+            title="Her houses, not a catalog."
+            lede="Real kitchens, real granite, real living rooms. This is the work — including a before and after from a kitchen that needed air."
           />
           <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
-            <img
-              src="/images/closet.jpg"
-              alt="A walk-in closet with even hangers and folded stacks."
-              className="photo col-span-2 aspect-4/3 rounded-xl object-cover lg:col-span-2"
-            />
-            <img
-              src="/images/pantry.jpg"
-              alt="Labeled glass jars on a pantry shelf."
-              className="photo aspect-4/3 rounded-xl object-cover"
-            />
-            <img
-              src="/images/bathroom.jpg"
-              alt="A marble bathroom after a precise clean."
-              className="photo aspect-4/3 rounded-xl object-cover"
-            />
-            <img
-              src="/images/kitchen.jpg"
-              alt="A bright kitchen with a clear counter and ordered pantry."
-              className="photo aspect-4/3 rounded-xl object-cover"
-            />
-            <img
-              src="/images/mudroom.jpg"
-              alt="A mudroom with baskets, hooks, and a calm entry."
-              className="photo aspect-4/3 rounded-xl object-cover"
-            />
-            <img
-              src="/images/garage.jpg"
-              alt="An organized residential garage with labeled bins."
-              className="photo col-span-2 aspect-4/3 rounded-xl object-cover"
-            />
+            {WORK.map((shot) => (
+              <figure
+                key={shot.src}
+                className={cn(
+                  "overflow-hidden rounded-xl",
+                  shot.wide ? "col-span-2" : "col-span-1",
+                )}
+              >
+                <img
+                  src={shot.src}
+                  alt={shot.alt}
+                  className="photo aspect-4/3 w-full object-cover"
+                />
+                <figcaption className="bg-surface px-3 py-2 text-xs text-muted">
+                  {shot.caption}
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </Container>
       </Section>
@@ -263,9 +251,9 @@ function Home() {
         <Container className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <SectionHeading
-              eyebrow="Transparent pricing"
+              eyebrow="Honest pricing"
               title="A 3 bedroom, 2 bath home has a number."
-              lede="No mystery menus. Build a live estimate from the published rates, then send it to Amanda."
+              lede="High-quality work at a price you can keep. Build a live estimate, then send it to me."
             />
             <Button asChild className="mt-8" size="lg">
               <Link to="/quote">
@@ -308,7 +296,7 @@ function Home() {
           <div className="lg:col-span-4">
             <SectionHeading
               eyebrow="Questions"
-              title="Clear answers for an overwhelmed week."
+              title="The practical ones."
             />
             <Link
               to="/faq"

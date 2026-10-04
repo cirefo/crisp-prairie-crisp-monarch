@@ -13,7 +13,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Amanda French founded Graceful Order for homes that need more than a wipe-down: cleaning, decluttering, and organizing with kindness and precision across North Dallas.",
+          "Amanda French is the trusted individual behind Graceful Order — house cleaning, organizing, décor support, and construction or move-in cleans across North Dallas.",
       },
     ],
   }),
@@ -24,51 +24,53 @@ function AboutPage() {
     <main id="main">
       <PageHero
         eyebrow="About"
-        title="Amanda French. Kindness + precision."
-        lede="The last name is not a costume. It is a small permission to take order seriously — and to do it with grace instead of rigidity. Graceful Order is her studio for homes that have better things to do than start over every weekend."
+        title="I’m Amanda. This is a one-woman service on purpose."
+        lede="People around here aren’t looking for another national crew. They want someone they can trust in the house — flexible hours, their own supplies, and the patience to finish a garage. That’s Graceful Order."
       />
 
       <Section>
         <Container className="grid items-start gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <img
-              src="/images/pantry.jpg"
-              alt="A pantry shelf after Amanda’s organizing — labeled jars, even rows, warm light."
+              src="/images/work-kitchen-after.jpg"
+              alt="A kitchen after Amanda’s clean and reset."
               className="photo aspect-3/2 w-full rounded-xl object-cover"
             />
             <img
-              src="/images/closet.jpg"
-              alt="An organized closet with rose hangers and folded knits."
+              src="/images/work-living-navy.jpg"
+              alt="A living room after cleaning and décor placement."
               className="photo mt-4 aspect-4/3 w-full rounded-xl object-cover"
             />
           </div>
           <div className="lg:col-span-7">
             <h2 className="font-display text-3xl font-medium text-ink">
-              A French approach to an American week.
+              A hidden-gem kind of clean.
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
               <p>
-                Most cleaning companies are paid to make a room look untouched.
-                Most organizing companies are paid to make a room look like a
-                catalog. Amanda noticed that neither visit lasts unless the
-                house is given a system — and a person who comes back.
+                Graceful Order Cleaning is a smaller local business for house
+                cleaning, home décor support, and household organizing. I take
+                apartments and two-story houses, basic cleans and deep cleans,
+                holiday ready-sets, move-ins, and construction cleanups. If
+                it lives in a North Dallas home and it’s been putting off the
+                calm, it’s probably in my week.
               </p>
               <p>
-                Graceful Order sits in that gap. She cleans. She sanitizes. She
-                declutters without humiliation. Then she organizes: zones,
-                labels, reach, and a maintenance rhythm that a real Plano or
-                Frisco week can keep. The brand is calm and polished because
-                the work is. The wit is light because overwhelmed clients do
-                not need a performance.
+                I’m detail-oriented without being rigid, and I price the work
+                so you can actually keep a rhythm. Moderate lifting is part of
+                the job — closets, garages, and rooms don’t clear themselves.
+                I bring my supplies. You don’t have to run to the store the
+                night before.
               </p>
               <p>
-                The “French touch” is mise en place. Everything used tomorrow
-                has a home tonight. Not rigid. Not precious. Just careful.
+                The last name is French. The promise is simpler: kindness plus
+                precision, and a person who comes back. Because you have better
+                things to do.
               </p>
               <p>
-                She serves Plano, Allen, Carrollton, Dallas, Garland, Rowlett,
+                I serve Plano, Allen, Carrollton, Dallas, Garland, Rowlett,
                 McKinney, Frisco, Mesquite, and Grapevine. If your house is
-                tired, that is enough information to start.
+                tired, that’s enough information to start.
               </p>
             </div>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -76,7 +78,7 @@ function AboutPage() {
                 <Link to="/quote">Request a quote</Link>
               </Button>
               <Button asChild variant="outline">
-                <Link to="/contact">Write a note</Link>
+                <Link to="/contact">Write me a note</Link>
               </Button>
             </div>
           </div>
@@ -86,7 +88,7 @@ function AboutPage() {
       <Section className="bg-ivory">
         <Container>
           <h2 className="font-display text-3xl font-medium text-ink">
-            How a day with Amanda actually goes
+            How a day with me actually goes
           </h2>
           <ol className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {METHOD.map((item) => (

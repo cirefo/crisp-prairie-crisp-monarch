@@ -21,26 +21,18 @@ export function SiteHeader() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/80 bg-paper/90 backdrop-blur-md">
-      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-4 px-5 sm:px-8">
+    <header className="sticky top-0 z-40 border-b border-ivory/10 bg-footer">
+      <div className="mx-auto flex min-h-16 max-w-6xl items-center justify-between gap-3 px-5 py-2 sm:min-h-20 sm:px-8">
         <Link
           to="/"
-          className="flex min-h-11 items-center gap-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose"
+          className="flex min-h-11 min-w-0 items-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
           aria-label="Graceful Order home"
         >
           <img
-            src="/brand/emblem-light.png"
-            alt=""
-            className="h-12 w-auto object-contain sm:h-14"
+            src="/brand/logo-lockup.png"
+            alt="Graceful Order — Because you have better things to do."
+            className="h-11 w-auto max-w-[210px] object-contain object-left sm:h-14 sm:max-w-[300px] lg:h-16 lg:max-w-[380px]"
           />
-          <span className="flex flex-col justify-center leading-none">
-            <span className="font-display text-[1.55rem] font-medium tracking-tight text-ink sm:text-[1.75rem]">
-              Graceful
-            </span>
-            <span className="mt-1 text-[0.62rem] font-medium uppercase tracking-[0.38em] text-gold-deep">
-              Order
-            </span>
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Primary">
@@ -53,7 +45,9 @@ export function SiteHeader() {
                 to={item.href}
                 className={cn(
                   "inline-flex min-h-11 items-center px-3 text-[0.8rem] font-medium tracking-wide transition-colors duration-150",
-                  active ? "text-ink" : "text-ink-soft hover:text-ink",
+                  active
+                    ? "text-ivory"
+                    : "text-footer-muted hover:text-ivory",
                 )}
               >
                 {item.label}
@@ -62,13 +56,13 @@ export function SiteHeader() {
           })}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           <Button asChild size="sm" className="hidden sm:inline-flex">
             <Link to="/quote">Request a quote</Link>
           </Button>
           <button
             type="button"
-            className="inline-flex size-11 items-center justify-center rounded-md text-ink lg:hidden"
+            className="inline-flex size-11 items-center justify-center rounded-md text-ivory lg:hidden"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
@@ -79,13 +73,13 @@ export function SiteHeader() {
       </div>
 
       {open ? (
-        <div className="border-t border-border bg-paper lg:hidden">
+        <div className="border-t border-ivory/10 bg-footer lg:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col px-5 py-4" aria-label="Mobile">
             {NAV.map((item) => (
               <Link
                 key={item.href}
                 to={item.href}
-                className="flex min-h-12 items-center border-b border-border/70 text-base text-ink"
+                className="flex min-h-12 items-center border-b border-ivory/10 text-base text-ivory"
               >
                 {item.label}
               </Link>
@@ -98,7 +92,7 @@ export function SiteHeader() {
             </Link>
             <Link
               to="/contact"
-              className="mt-2 inline-flex min-h-12 items-center justify-center text-ink-soft"
+              className="mt-2 inline-flex min-h-12 items-center justify-center text-footer-muted"
             >
               Contact
             </Link>

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/areas/plano",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Home organizer & recurring cleaning in Plano, TX | Graceful Order",
+      "hasCanvas": false,
+      "bodyTextLen": 2024,
+      "bodyTextHash": "41b2f8cc3c7e2f94444cec39b12af24080ad12af9628a401812817d6e953879f",
+      "bodyTextPrefix": "Skip to content Graceful ORDER Services Packages Pricing Areas A",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/plano.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Home organizer & recurring cleaning in Plano, TX | Graceful Order",
+      "hasCanvas": false,
+      "bodyTextLen": 1966,
+      "bodyTextHash": "e64e8a19586c0e5e103dd8bd54016ede8217ccce865e3bc30cde80a4259e3645",
+      "bodyTextPrefix": "Skip to content Graceful ORDER COLLIN COUNTY · HOME BASE Home or",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/plano-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/plano.json"
+}
