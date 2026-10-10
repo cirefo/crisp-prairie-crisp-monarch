@@ -230,7 +230,7 @@ function Home() {
                 key={shot.src}
                 className={cn(
                   "overflow-hidden rounded-xl",
-                  shot.wide ? "col-span-2" : "col-span-1",
+                  "wide" in shot && shot.wide ? "col-span-2" : "col-span-1",
                 )}
               >
                 <img

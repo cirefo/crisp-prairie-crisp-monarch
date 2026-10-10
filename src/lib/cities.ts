@@ -24,7 +24,7 @@ export const CITIES: City[] = [
       "Plano is full of beautiful houses that are harder to live in than they look. Between Legacy offices, school calendars, and closets that were never given a system, most homes here do not need a lecture. They need a kind, precise hand — and a visit that comes back.",
     body: "Amanda works across West Plano estates, Willow Bend family homes, and the newer Legacy corridor, where kitchens are generous and garages have become a second attic. Graceful Order is built for that Plano rhythm: a deep reset when the house has slipped, then Graceful Maintenance so the calm does not depend on a heroic Saturday. Closets, pantries, and playrooms are organized as carefully as the counters are cleaned.",
     angle:
-      "If you have been searching for a home organizer in Plano who will also keep the house honestly clean, this is the studio.",
+      "If you have been searching for a home organizer in Plano who will also keep the house honestly clean, this is that person.",
     keyword: "home organizer Plano TX",
     meta: "Home organizer and recurring cleaning in Plano, TX. Graceful Order cleans, declutters, and organizes West Plano, Willow Bend, and Legacy homes — with a repeatable rhythm.",
   },

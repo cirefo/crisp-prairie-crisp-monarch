@@ -46,9 +46,9 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "Graceful Order is Amanda French’s organizing-first cleaning studio in North Dallas. Cleaning, sanitizing, decluttering, and organizing — with a repeatable rhythm.",
+          "Graceful Order is Amanda French’s local house-cleaning and organizing service in North Dallas. Trusted individual, flexible hours, supplies included.",
       },
-      { name: "theme-color", content: "#F6F1EA" },
+      { name: "theme-color", content: "#1A1512" },
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },

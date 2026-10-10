@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/quote",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Request a quote | Graceful Order pricing",
+      "hasCanvas": false,
+      "bodyTextLen": 2806,
+      "bodyTextHash": "87e495eb8bf058141911b43f4042be3124c5bb16a18951632c28cdd574952601",
+      "bodyTextPrefix": "Skip to content Services Packages Pricing Areas About FAQ Reques",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/show-quote.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Request a quote | Graceful Order pricing",
+      "hasCanvas": false,
+      "bodyTextLen": 2748,
+      "bodyTextHash": "8cede3c31157e40fe48008a769d4f7c621ee5bb87612e427951814a0fff8afac",
+      "bodyTextPrefix": "Skip to content PRICING A clear number. Then a conversation. The",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/show-quote-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/show-quote.json"
+}

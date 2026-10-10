@@ -37,15 +37,15 @@ function OrganizingPage() {
     <main id="main">
       <PageHero
         eyebrow="Organizing"
-        title="Home organizer in Plano — and the cities around it."
-        lede="This is the work Graceful Order is named for. Not a purge for its own sake. Thoughtful arrangement: a place for what you keep, and a house that stays that way because someone comes back."
+        title="Closets, garages, and rooms that have been waiting."
+        lede="This is the part most cleaning companies skip. I help clear, sort, and place — moderate lifting included — so the house is easier to live in, not just photographed."
       />
       <Section>
         <Container className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-6">
             <img
-              src="/images/closet.jpg"
-              alt="Professionally organized walk-in closet with rose hangers and folded knits."
+              src="/images/work-living-wide.jpg"
+              alt="Living room after cleaning and décor placement."
               className="photo aspect-4/3 w-full rounded-xl object-cover"
             />
           </div>
@@ -54,10 +54,9 @@ function OrganizingPage() {
               Structure, not a personality transplant.
             </h2>
             <p className="mt-4 text-ink-soft leading-relaxed">
-              Overwhelmed clients do not need a more disciplined version of
-              themselves. They need drawers that make sense at 7:40 p.m. Amanda
-              builds systems around how you actually live — then teaches the
-              house to hold them with a light maintenance visit.
+              You don’t need a stricter version of yourself. You need a garage
+              you can park in and a closet that closes. I build around how you
+              actually live — then I come back so it holds.
             </p>
             <ul className="mt-6 grid gap-2 sm:grid-cols-2">
               {rooms.map((room) => (

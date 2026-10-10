@@ -26,14 +26,14 @@ function CleaningPage() {
     <main id="main">
       <PageHero
         eyebrow="Cleaning & sanitizing"
-        title="Recurring cleaning that includes the corners."
-        lede="A 3 bedroom, 2 bath home is $150 per visit for Graceful Maintenance, $350 for a deep clean. Larger homes and extras are itemized. The difference is what we do with the piles: we do not dust around them."
+        title="A thorough clean — basic, deep, or after the dust settles."
+        lede="A 3 bedroom, 2 bath home is $150 per visit for a recurring clean, $350 for a deep clean. I bring my own supplies. Larger homes, construction dust, and extras are itemized before I start."
       />
       <Section>
         <Container className="grid gap-12 lg:grid-cols-2">
           <div>
             <h2 className="font-display text-3xl font-medium">
-              Two ways to keep a house honest
+              Two ways to keep the house
             </h2>
             <div className="mt-8 space-y-6">
               <div className="rounded-xl bg-surface p-6 shadow-card">
@@ -42,9 +42,9 @@ function CleaningPage() {
                 </p>
                 <h3 className="mt-1 font-display text-2xl">Graceful Maintenance</h3>
                 <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                  Weekly, biweekly, or monthly. Thorough recurring clean plus
-                  light organizing of systems already in place. The repeatable
-                  service the brand is built on.
+                  Weekly, biweekly, or monthly — flexible hours, same person.
+                  Thorough clean plus light organizing of the systems we
+                  already built. Apartments through two-story houses.
                 </p>
               </div>
               <div className="rounded-xl bg-surface p-6 shadow-card">
@@ -53,9 +53,10 @@ function CleaningPage() {
                 </p>
                 <h3 className="mt-1 font-display text-2xl">Deep clean</h3>
                 <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                  Baseboards, grout lines, the oven you have been avoiding,
-                  inside the microwave, the shower glass. Pair it with The
-                  Graceful Reset if the house also needs a system.
+                  Baseboards, grout, the oven you’ve been avoiding, shower
+                  glass. Also the clean before holidays, a move-in, or after
+                  construction dust. Pair it with a Reset if the house needs a
+                  system, not just a shine.
                 </p>
               </div>
             </div>
@@ -67,13 +68,13 @@ function CleaningPage() {
           </div>
           <div className="grid gap-4">
             <img
-              src="/images/bathroom.jpg"
-              alt="Spa-like bathroom after a deep clean."
+              src="/images/work-granite-close.jpg"
+              alt="Granite counter after a detailed Graceful Order clean."
               className="photo aspect-4/3 w-full rounded-xl object-cover"
             />
             <img
-              src="/images/kitchen.jpg"
-              alt="Kitchen after a professional deep clean."
+              src="/images/work-kitchen-galley.jpg"
+              alt="Galley kitchen after a full house cleaning."
               className="photo aspect-4/3 w-full rounded-xl object-cover"
             />
           </div>

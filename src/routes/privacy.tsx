@@ -31,9 +31,9 @@ function PrivacyPage() {
             In this preview, those records stay on your device.
           </p>
           <p>
-            Photographs on the site are studio and lifestyle images of rooms —
-            not photographs of client homes unless a client later chooses to
-            share them.
+            Photographs include rooms Amanda has cleaned and organized. They
+            are shared as examples of the work, not as advertising for a
+            particular address.
           </p>
         </Container>
       </Section>

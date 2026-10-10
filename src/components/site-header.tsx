@@ -22,16 +22,21 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-ivory/10 bg-footer">
-      <div className="mx-auto flex min-h-16 max-w-6xl items-center justify-between gap-3 px-5 py-2 sm:min-h-20 sm:px-8">
+      <div className="mx-auto flex min-h-24 max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:min-h-28 sm:gap-4 sm:px-8 lg:min-h-32">
         <Link
           to="/"
-          className="flex min-h-11 min-w-0 items-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+          className="flex min-w-0 items-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold sm:gap-3"
           aria-label="Graceful Order home"
         >
           <img
-            src="/brand/logo-lockup.png"
-            alt="Graceful Order — Because you have better things to do."
-            className="h-11 w-auto max-w-[210px] object-contain object-left sm:h-14 sm:max-w-[300px] lg:h-16 lg:max-w-[380px]"
+            src="/brand/emblem-header.png"
+            alt=""
+            className="h-16 w-auto shrink-0 object-contain sm:h-20 lg:h-24"
+          />
+          <img
+            src="/brand/lettermark.png"
+            alt="Graceful Order"
+            className="h-10 w-auto max-w-[9.5rem] object-contain object-left sm:h-12 sm:max-w-none lg:h-14"
           />
         </Link>
 
@@ -44,7 +49,7 @@ export function SiteHeader() {
                 key={item.href}
                 to={item.href}
                 className={cn(
-                  "inline-flex min-h-11 items-center px-3 text-[0.8rem] font-medium tracking-wide transition-colors duration-150",
+                  "inline-flex min-h-11 items-center px-2.5 text-[0.95rem] font-medium tracking-wide transition-colors duration-150",
                   active
                     ? "text-ivory"
                     : "text-footer-muted hover:text-ivory",

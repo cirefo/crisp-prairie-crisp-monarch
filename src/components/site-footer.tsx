@@ -10,11 +10,18 @@ export function SiteFooter() {
       <Container className="py-16 sm:py-20">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <img
-              src="/brand/logo-lockup.png"
-              alt="Graceful Order"
-              className="h-16 w-auto max-w-[320px] object-contain object-left"
-            />
+            <Link to="/" className="inline-flex items-center gap-3" aria-label="Graceful Order home">
+              <img
+                src="/brand/emblem-header.png"
+                alt=""
+                className="h-20 w-auto object-contain"
+              />
+              <img
+                src="/brand/lettermark.png"
+                alt="Graceful Order"
+                className="h-14 w-auto object-contain"
+              />
+            </Link>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-footer-muted">
               A smaller local cleaning and organizing service — house cleaning,
               home décor support, and the closets and garages nobody else wants

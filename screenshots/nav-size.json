@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Graceful Order | House cleaning & organizing in Plano, TX",
+      "hasCanvas": false,
+      "bodyTextLen": 5539,
+      "bodyTextHash": "3ecf5c45015c244ac4c0c5fa49f1c357141a6c1887f40164ccc380cbbdabb058",
+      "bodyTextPrefix": "Skip to content Services Packages Pricing Areas About FAQ Reques",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/nav-size.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Graceful Order | House cleaning & organizing in Plano, TX",
+      "hasCanvas": false,
+      "bodyTextLen": 5481,
+      "bodyTextHash": "f5a5cba02e4f49b8e66536a8503793e2762efe1c92911f55b479d29379f65bee",
+      "bodyTextPrefix": "Skip to content A TRUSTED LOCAL · PLANO TO GRAPEVINE Because you",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/nav-size-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/nav-size.json"
+}

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/about",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "About Amanda French | Graceful Order",
+      "hasCanvas": false,
+      "bodyTextLen": 2694,
+      "bodyTextHash": "ad6dfe108d63e9c76ecbde63f024c47796b8bdbaea42f725b8816ddbb6639e68",
+      "bodyTextPrefix": "Skip to content Services Packages Pricing Areas About FAQ Reques",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/show-about.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "About Amanda French | Graceful Order",
+      "hasCanvas": false,
+      "bodyTextLen": 2636,
+      "bodyTextHash": "f33e1963fd105725cf93c9e0b109cab9c6f6d524d93821a79ae58a1fb9ea1c5c",
+      "bodyTextPrefix": "Skip to content ABOUT I’m Amanda. This is a one-woman service on",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/show-about-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/show-about.json"
+}

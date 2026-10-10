@@ -13,7 +13,7 @@ export const Route = createFileRoute("/services/")({
       {
         name: "description",
         content:
-          "Organizing, cleaning, sanitizing, decluttering, and Airbnb turnovers from Graceful Order. North Dallas homes that need a system, not just a wipe-down.",
+          "House cleaning, organizing, décor support, and construction or move-in cleans from Graceful Order. A trusted local — not a rotating crew — across North Dallas.",
       },
     ],
   }),
@@ -37,8 +37,8 @@ function ServicesPage() {
     <main id="main">
       <PageHero
         eyebrow="Services"
-        title="Organizing with care, clarity, and grace."
-        lede="Every offering is available on its own. Together they are the studio: a clean house with a system, kept on a rhythm you do not have to heroically maintain."
+        title="Cleaning, organizing, and the jobs in between."
+        lede="Book one room or the whole rhythm. House cleaning, closets and garages, décor placement, holiday ready-sets, and construction or move-in cleans — I bring my supplies."
       />
       <Section>
         <Container>
